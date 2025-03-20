@@ -8,3 +8,5 @@ OutputData
 boost_*
 SQLite*
 ffmpeg*
+/.cache
+/build

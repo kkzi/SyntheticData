@@ -1,0 +1,16 @@
+﻿{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "msvc-debug",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_C_COMPILER": "cl",
+                "CMAKE_CXX_COMPILER": "cl",
+                "CMAKE_TOOLCHAIN_FILE": "$env{vcpkg_latest}/scripts/buildsystems/vcpkg.cmake"
+            }
+        }
+    ]
+}
